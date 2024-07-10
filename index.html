@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section A Answers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        h3 {
+            color: #555;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .collapsible {
+            background-color: #f1f1f1;
+            color: #444;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        .active, .collapsible:hover {
+            background-color: #ddd;
+        }
+        .content {
+            padding: 0 10px;
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Position above the text */
+            left: 50%;
+            margin-left: -80px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+        #searchBar {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Section A Answers</h1>
+    <input type="text" id="searchBar" onkeyup="searchFunction()" placeholder="Search for keywords..">
+
+    <div id="unit1">
+        <h2>UNIT 1</h2>
+        <h3>SECTION-A [1M]</h3>
+
+        <button class="collapsible">1. State and additive theorem on probability</button>
+        <div class="content">
+            <p><strong>Answer:</strong> The Additive Rule states that for two events A and B, the probability of either A or B occurring is given by:<br>
+            <code>P(A ∪ B) = P(A) + P(B) - P(A ∩ B)</code></p>
+        </div>
+
+        <button class="collapsible">2. State the product rule on Probability</button>
+        <div class="content">
+            <p><strong>Answer:</strong> The Product Rule states that for two independent events A and B, the probability of both A and B occurring is:<br>
+            <code>P(A ∩ B) = P(A) × P(B)</code></p>
+        </div>
+
+        <button class="collapsible">3. Define conditional probability</button>
+        <div class="content">
+            <p><strong>Answer:</strong> Conditional Probability is the probability of event A occurring given that event B has occurred:<br>
+            <code>P(A|B) = P(A ∩ B) / P(B)</code></p>
+        </div>
+
+        <button class="collapsible">4. Define random variable and types of random variables</button>
+        <div class="content">
+            <p><strong>Answer:</strong> A random variable is a function that assigns a numerical value to each outcome in a sample space. Types:<br>
+            - <strong>Discrete Random Variable</strong>: Takes on a countable number of values.<br>
+            - <strong>Continuous Random Variable</strong>: Takes on an infinite number of values within a range.</p>
+        </div>
+
+        <button class="collapsible">5. Out of 15 items, 4 are not in good condition. 4 are selected at random. Find:</button>
+        <div class="content">
+            <p><strong>Answer:</strong> - (i) All are not good: <code>Probability = (4C4 × 11C0) / 15C4</code><br>
+            - (ii) Two are not good: <code>Probability = (4C2 × 11C2) / 15C4</code></p>
+        </div>
+
+        <button class="collapsible">6. A chord is drawn from a well-shuffled pack of cards. What is the probability that it is a spade or an ace?</button>
+        <div class="content">
+            <p><strong>Answer:</strong> <code>Probability = (13 + 4 - 1) / 52</code></p>
+        </div>
+
+        <button class="collapsible">7. List the properties of probability function</button>
+        <div class="content">
+            <p><strong>Answer:</strong> - <strong>Non-negativity</strong>: <code>P(A) ≥ 0</code><br>
+            - <strong>Normalization</strong>: <code>P(S) = 1</code>, where S is the sample space.<br>
+            - <strong>Additivity</strong>: For mutually exclusive events, <code>P(A ∪ B) = P(A) + P(B)</code>.</p>
+        </div>
+
+        <button class="collapsible">8. What is the relation between probability density function and cumulative distribution function?</button>
+        <div class="content">
+            <p><strong>Answer:</strong> For a continuous random variable, the CDF <code>F(x)</code> is the integral of the PDF <code>f(x)</code>:<br>
+            <code>F(x) = ∫(-∞ to x) f(t) dt</code></p>
+        </div>
+
+        <button class="collapsible">9. Define random variable</button>
+        <div class="content">
+            <p><strong>Answer:</strong> A random variable is a numerical outcome of a random process or experiment.</p>
+        </div>
+    </div>
+
+    <div id="unit2">
+        <h2>UNIT 2</h2>
+        <h3>SECTION-A [1M]</h3>
+
+        <button class="collapsible">1. Define binomial distribution</button>
+        <div class="content">
+            <p><strong>Answer:</strong> A distribution of the number of successes in a fixed number of independent Bernoulli trials.</p>
+        </div>
+
+        <button class="collapsible">2. Define Poisson distribution</button>
+        <div class="content">
+            <p><strong>Answer:</strong> A distribution representing the number of events occurring in a fixed interval of time or space.</p>
+        </div>
+
+        <button class="collapsible">3. What are the mean and variance of a binomial distribution?</button>
+        <div class="content">
+            <p><strong>Answer:</strong> - <strong>Mean</strong>: <code>n × p</code><br>
+            - <strong>Variance</strong>: <code>n × p × (1 - p)</code></p>
+        </div>
+
+        <button class="collapsible">4. What is the mathematical expectation?</button>
+        <div class="content">
+            <p><strong>Answer:</strong> The expected value of a random variable, representing the long-term average.</p>
+        </div>
+
+        <button class="collapsible">5. Define expected value and variance of a random variable</button>
+        <div class="content">
+            <p><strong>Answer:</strong> - <strong>Expected Value</strong>: <code>E(X) = Σ x × p(x)</code><br>
+            - <strong>Variance</strong>: <code>Var(X) = E[X²] - (E[X])²</code></p>
+        </div>
+
+        <button class="collapsible">6. Define distribution function of a random variable</button>
+        <div class="content">
+            <p><strong>Answer:</strong> The CDF gives the probability that a random variable is less than or equal to a certain value.</p>
+        </div>
+
+        <button class="collapsible">7. Prove that <code>E(X + K) = E(X) + K</code> where X is a random variable and K is a constant</button>
+        <div class="content">
+            <p><strong>Answer:</strong> <strong>Proof:</strong> <code>E(X + K) = E(X) + E(K) = E(X) + K</code></p>
+        </div>
+
+        <button class="collapsible">8. State the formula for standard deviation of a random variable</button>
+        <div class="content">
+            <p><strong>Answer:</strong> <code>Standard Deviation = √Variance</code></p>
+        </div>
+
+        <button class="collapsible">9. What is the sum of probabilities of all possible outcomes of a random experiment?</button>
+        <div class="content">
+            <p><strong>Answer:</strong> The sum of probabilities of all outcomes equals 1.</p>
+        </div>
+    </div>
+
+    <div id="unit3">
+        <h2>UNIT 3</h2>
+        <h3>SECTION-A [1M]</h3>
+
+        <button class="collapsible">1. Define Sampling distribution</button>
+        <div class="content">
+            <p><strong>Answer:</strong> The probability distribution of a given statistic based on a random sample.</p>
+        </div>
+
+        <button class="collapsible">2. What are the types of hypothesis testing?</button>
+        <div class="content">
+            <p><strong>Answer:</strong> - <strong>One-tailed Test</strong>: Rejection area is on one side.<br>
+            - <strong>Two-tailed Test</strong>: Rejection area is on both sides.</p>
+        </div>
+
+        <button class="collapsible">3. Define estimate, estimator, and types of estimation</button>
+        <div class="content">
+            <p><strong>Answer:</strong> - <strong>Estimate</strong>: A value from a sample.<br>
+            - <strong>Estimator</strong>: A method for estimating parameters.<br>
+            - <strong>Types</strong>: Point and Interval estimation.</p>
+        </div>
+
+        <button class="collapsible">4. Define point and interval estimation</button>
+        <div class="content">
+            <p><strong>Answer:</strong> - <strong>Point Estimation</strong>: Single value estimate.<br>
+            - <strong>Interval Estimation</strong>: Range of values.</p>
+        </div>
+
+        <button class="collapsible">5. Define TEST OF HYPOTHESIS</button>
+        <div class="content">
+            <p><strong>Answer:</strong> A procedure to decide to reject or not reject a null hypothesis based on sample data.</p>
+        </div>
+
+        <button class="collapsible">6. Define unbiased estimator</button>
+        <div class="content">
+            <p><strong>Answer:</strong> An estimator whose expected value equals the parameter it estimates.</p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for collapsible elements
+        document.querySelectorAll('.collapsible').forEach(button => {
+            button.addEventListener('click', () => {
+                button.classList.toggle('active');
+                const content = button.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+
+        // JavaScript for search function
+        function searchFunction() {
+            const input = document.getElementById('searchBar').value.toLowerCase();
+            const units = document.querySelectorAll('div[id^="unit"]');
+            units.forEach(unit => {
+                const buttons = unit.querySelectorAll('.collapsible');
+                buttons.forEach(button => {
+                    const text = button.textContent.toLowerCase();
+                    button.style.display = text.includes(input) ? 'block' : 'none';
+                });
+            });
+        }
+    </script>
+</body>
+</html>
